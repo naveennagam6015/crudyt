@@ -14,9 +14,9 @@ function Add() {
         e.preventDefault();
         const ids = uuid();
         let uniqueId = ids.slice(0, 8);
-        let a = name,
-            b = age;
-        Employees.push({ id: uniqueId, Name: a, Age: b });
+        // let a = name,
+        //     b = age;
+        Employees.push({ id: uniqueId, Name: name, Age: age });
         history("/");
     }
     return (
